@@ -1,0 +1,13 @@
+@import '../App.scss';
+
+header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Archivo Black', sans-serif;
+
+  h2 {
+    background: linear-gradient(to right, #b92b27, #1565c0);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}

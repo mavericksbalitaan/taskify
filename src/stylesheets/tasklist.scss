@@ -1,0 +1,29 @@
+.tasklist__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #393E46;
+  height: 70vh;
+  width: 50%;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .tasklist__container {
+    flex-direction: column;
+  }
+
+  ul {
+    width: 100%;
+  }
+}
