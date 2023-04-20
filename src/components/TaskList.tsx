@@ -3,10 +3,13 @@ import { TaskContext } from '../contexts/TaskContext'
 
 const TaskList = () => {
   const context = useContext(TaskContext);
-  console.log(context.state.tasks.length)
+  const { state } = context;
+  console.log(state.tasks.length)
 
   return (
-    <div>{context.state.tasks.length}</div>
+    <div>{state.tasks.map(el => {
+      return (<li key={el.id}>{el.text}</li>)
+    })}</div>
   )
 }
 

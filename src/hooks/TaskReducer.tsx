@@ -12,7 +12,7 @@ export const initState = {
   tasks: [],
 };
 
-enum ActionTypes {
+export enum ActionTypes {
   ADD,
   REMOVE,
   DONE,
