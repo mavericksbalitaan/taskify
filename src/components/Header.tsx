@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Typography } from '@mui/material';
+import '../stylesheets/header.scss';
 
 const Header: React.FC = () => {
   return (
     <>
       <header>
-        <h1>Taskify</h1>
+        <Typography variant="h2">Taskify</Typography>
       </header>
     </>
   )

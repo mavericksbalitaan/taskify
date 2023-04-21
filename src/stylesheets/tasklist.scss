@@ -1,0 +1,11 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid LightBlue;
+  min-height: 70vh;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}

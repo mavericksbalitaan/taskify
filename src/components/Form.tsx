@@ -14,19 +14,21 @@ const Form: React.FC = () => {
     setValue(e.target.value);
   }
 
-  const clickHandler = (): void => {
+  const clickHandler = (e: any): void => {
+    e.preventDefault();
     dispatch({
       type: ActionTypes.ADD,
       payload: value
     })
-    // alert('test');
+    setValue("");
   }
+
   return (
-    <form>
+    <form onSubmit={clickHandler}>
       <div>
         <TextField placeholder="Put your task here" value={value} onChange={changeHandler} required />
         <span>
-          <IconButton onClick={() => clickHandler()}>
+          <IconButton>
             <Add />
           </IconButton>
         </span>
